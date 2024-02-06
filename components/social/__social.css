@@ -1,0 +1,120 @@
+.social{
+    background-color: #272727;
+    width: 100%;
+    margin-top: 1.25rem;
+    padding-top: 6.25rem;
+    color: white;
+    padding-bottom: 6rem;
+}
+
+.social__title{
+    font-family: Forum;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.09rem;
+}
+
+.social__carusel{
+    width: 80%;
+    overflow: visible !important;
+    margin-top: 5rem;
+    display: flex !important;
+    gap: 5rem;
+}
+
+
+.social__slide-img{
+    padding-top: 100%;
+}
+
+.social__carusel .swiper-pagination{
+    position: relative ;
+    bottom: 0 !important;
+    width: fit-content !important;
+    min-width: 4rem;
+    height: 1rem;
+}
+
+.social__nav{
+    width: fit-content;
+    position: relative;
+    gap: 3rem;
+}
+
+.social__nav-button{
+    background-size: contain;
+    width: 3.1875rem !important;
+    height: 1.8125rem !important;
+    position: unset !important;
+    margin-top: 0 !important;
+    transition: all .24s ease;
+}
+
+.social__nav-button:hover{
+    transform: scale(1.1);
+}
+
+.swiper-button-next{
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='53' height='31' viewBox='0 0 53 31' fill='none'%3e%3cpath d='M37.6562 1L52 15.5M52 15.5L37.6562 30M52 15.5L0.999999 15.5' stroke='white' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e");
+}
+.swiper-button-prev{
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='53' height='31' viewBox='0 0 53 31' fill='none'%3e%3cpath d='M15.3438 0.999998L0.999999 15.5M0.999999 15.5L15.3437 30M0.999999 15.5L52 15.5' stroke='white' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e");
+}
+
+.swiper-button-next:after, .swiper-button-prev:after{
+    content: '' !important;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: white !important;
+}
+
+.swiper-pagination-bullet{
+    background-color: rgba(255, 255, 255, 0.64) !important;
+}
+
+.social__carusel-bottom{
+    max-width: 100% !important;
+}
+
+.social__carusel-btn{
+    width: 2.1875rem;
+    transition: all .24s ease;
+}
+.social__carusel-btns{
+    gap: 1.25rem;
+}
+
+.social__carusel-btn-img{
+    padding-top: 100%;
+}
+
+.social__carusel-btn:hover{
+    opacity: .7;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 990px) {
+    .social__carusel {
+        width: 90%;
+        overflow: visible !important;
+        margin-top: 3rem;
+        display: flex !important;
+        gap: 3rem;
+    }
+}
+
+
+@media screen and (max-width: 640px) {
+    .social__carusel {
+        width: 100%;
+    }
+
+    .social {
+        margin-top: .5rem;
+        padding-top: 3.25rem;
+        padding-bottom: 4rem;
+    }
+}

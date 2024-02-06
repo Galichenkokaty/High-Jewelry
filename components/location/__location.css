@@ -1,0 +1,114 @@
+.location{
+    width: 100%;
+    margin-top: 1.25rem;
+    grid-template-columns: 1fr 1.02fr;
+    background-color: #272727;
+    position: relative;
+}
+.location__map{
+    position: relative;
+    width: 100%;
+    padding-top: 81.62162162162161%;
+}
+.location__map iframe{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    filter: grayscale(1) brightness(50%);
+	-ms-filter: grayscale(1) brightness(50%);
+	-webkit-filter: grayscale(1) brightness(50%);
+	-moz-filter: grayscale(1) brightness(50%);
+	-o-filter: grayscale(1) brightness(50%);
+}
+
+.location__search{
+    color: white;
+    width: 28.5rem;
+    margin: auto;
+}
+
+.location__search-title{
+    color: #FFF;
+    font-family: Forum;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.09rem;
+}
+
+.location__search-desc{
+    font-family: Futura PT;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.location__search-input{
+    margin-top: 3.75rem;
+    width: 100%;
+    position: relative;
+}
+
+.location__search-input input{
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    border-bottom: 1px solid white;
+    padding-bottom: 0.5rem;
+    transition: all .24s ease;
+    color: white;
+    padding-right: 2rem;
+}
+.location__search-input input:focus-visible, .location__search-input input:hover{
+    background-color: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.64);
+    outline: unset;
+}
+
+.location__search-input-arrow{
+    display: block;
+    width: 1.75rem;
+    position: absolute;
+    bottom: 0.625rem;
+    right: 0;
+}
+
+.location__search-input-arrow span{
+    padding-top: 53.57142857142857%;
+}
+
+
+@media screen and (max-width: 768px) {
+    .location__search {
+        width: 23.5rem;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .location {
+        margin-top: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+
+    .location__search {
+        width: calc(100% - 2rem);
+        margin: 1rem 1rem 0 1rem;
+    }
+
+    .location__search-title{
+        font-size: 2rem;
+    }
+
+    .location__search-desc br{
+        display: none;
+    }
+
+    .location__map {
+        padding-top: 63.621622%;
+    }
+}

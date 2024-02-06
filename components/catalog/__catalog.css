@@ -1,0 +1,122 @@
+.catalog{
+    margin-top: 1.25rem;
+}
+
+.catalog__item{
+    background: #EDEDED;
+    position: relative;
+    gap: 4rem;
+    overflow: hidden;
+    padding: 1.88rem 1.25rem;
+}
+
+.catalog__items{
+    gap: 1.25rem;
+    grid-template-columns: 1fr 1.25fr 1fr;
+}
+
+
+.catalog__item:nth-child(2){
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    gap: 0;
+    justify-content: end;
+}
+
+.catalog__item:nth-child(2) .catalog__item-thumb{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+.catalog__item:nth-child(2) .catalog__item-img{
+    padding-top: 136%;
+}
+
+.catalog__item-thumb{
+    width: 20rem;
+}
+
+.catalog__item-img{
+    padding-top: 80%;
+}
+.catalog__item-img img{
+    object-fit: contain;
+}
+.catalog__item:nth-child(2) .catalog__item-img {
+    position: initial;
+}
+.catalog__item:nth-child(2) .catalog__item-img img{
+    object-fit: cover;
+}
+
+.catalog__item-info{
+    width: 100%;
+    position: relative;
+    z-index: 3;
+    gap: 0.56rem;
+}
+
+.catalog__item-info .header__info-ring-materials{
+    color: #757575;
+}
+.catalog__item-info .header__info-ring-price{
+    color: #E2B67A;
+}
+
+.catalog__item:nth-child(2) .header__info-ring-materials{
+    color: #E7E7E7;
+}
+.catalog__item:nth-child(2) .header__info-ring-name{
+    color: #fff;
+}
+.catalog__item:nth-child(2) .header__info-ring-price{
+    color: #EFC58B;
+}
+
+@media screen and (max-width: 990px) {
+    .catalog__item-thumb {
+        width: 15rem;
+    }
+
+    .catalog__item {
+        gap: 2rem;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .catalog__item-thumb {
+        width: 11rem;
+    }
+}
+
+
+@media screen and (max-width: 640px) {
+    .catalog{
+        margin-top: .5rem;
+    }
+
+    .catalog__items{
+        gap: .5rem;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .catalog__item:nth-child(2){
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .catalog__item:nth-child(2) .catalog__item-img{
+        position: relative;
+        bottom: 0;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .catalog__items {
+        grid-template-columns: 1fr 1fr;
+    }
+}

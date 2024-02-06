@@ -1,0 +1,32 @@
+:root {
+    /* main */
+    --color__dark: #3E3E41;
+    --color__white: #ffffff;
+    
+    /* fill */
+    --color__fill-1: #F52536;
+    --color__fill-2: #7B00FF;
+    --color__fill-3: #53EAE0;
+    --color__fill-4: #F5F5F9;
+    --color__fill-1-h: #DB2130;
+    --color__fill-2-h: #6000c8;
+    --color__fill-3-h: #4AD1C8;
+    --color__fill-4-h: #ececf2;
+    --color__fill-1-a: #A81925;
+    --color__fill-2-a: #5700B2;
+    --color__fill-3-a: #389E97;
+    --color__fill-4-a: #d7d7d7;
+
+
+    /* border */
+    --color__border: #E9E9E9;
+
+    /* text */
+    --color__text-1: #000000;
+    --color__text-2: #7A7A7A;
+    --color__text-3: #B4B4B4;
+
+    /* gray */
+    --color__gray-1: #F5F5F9;
+    --color__gray-2: #FAFAFC;
+}

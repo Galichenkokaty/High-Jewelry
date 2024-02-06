@@ -1,0 +1,87 @@
+p {
+    margin: 1.5rem auto;
+}
+
+p b {
+    font-weight: 700;
+}
+
+.p.--xl,
+p.--xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+p.--xl {
+    font-size: 1.9rem;
+    line-height: 2.3rem;
+}
+
+.p.--l,
+p.--l {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+}
+
+p.--l {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+}
+
+p,
+.--p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+p {}
+
+.p.--m,
+p.--m {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+p.--m {}
+
+.p.--s,
+p.--s {
+    font-size: 0.75rem;
+    line-height: 1rem;
+}
+
+p.--s {}
+
+.p.--xs,
+p.--xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
+}
+
+p.--xs {}
+
+.type-editor p:first-child,
+.type-editor li:first-child {
+    margin-top: 0px !important;
+}
+
+.type-editor p:last-child,
+.type-editor li:last-child {
+    margin-bottom: 0px !important;
+}
+
+.type-editor p:first-child {
+    margin-top: 0px;
+}
+
+.type-editor p:last-child {
+    margin-bottom: 0px;
+}
+
+@media screen and (max-width: 991px) {
+    .p.--xl,
+    p.--xl {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
+}
